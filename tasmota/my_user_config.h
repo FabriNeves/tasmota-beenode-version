@@ -71,8 +71,8 @@
 #define WIFI_DNS               "192.168.1.1"     // [IpAddress4] If not using DHCP set DNS1 IP address (might be equal to WIFI_GATEWAY)
 #define WIFI_DNS2              "0.0.0.0"         // [IpAddress5] If not using DHCP set DNS2 IP address (might be equal to WIFI_GATEWAY)
 
-#define STA_SSID1              ""                // [Ssid1] Wi-Fi SSID
-#define STA_PASS1              ""                // [Password1] Wi-Fi password
+#define STA_SSID1              "FAMILIA NEVES"                // [Ssid1] Wi-Fi SSID
+#define STA_PASS1              "casa6int"                // [Password1] Wi-Fi password
 #define STA_SSID2              ""                // [Ssid2] Optional alternate AP Wi-Fi SSID
 #define STA_PASS2              ""                // [Password2] Optional alternate AP Wi-Fi password
 #define WIFI_AP_PASSPHRASE     ""                // AccessPoint passphrase. For WPA2 min 8 char, for open use "" (max 63 char).
@@ -166,7 +166,7 @@
 // -- HTTP ----------------------------------------
 #define WEB_SERVER             2                 // [WebServer] Web server (0 = Off, 1 = Start as User, 2 = Start as Admin)
 #define WEB_PASSWORD           ""                // [WebPassword] Web server Admin mode Password for WEB_USERNAME (empty string = Disable)
-#define FRIENDLY_NAME          "Tasmota"         // [FriendlyName] Friendlyname up to 32 characters used by webpages and Alexa
+#define FRIENDLY_NAME          "Beenode"         // [FriendlyName] Friendlyname up to 32 characters used by webpages and Alexa
 #define EMULATION              EMUL_NONE         // [Emulation] Select Belkin WeMo (single relay/light) or Hue Bridge emulation (multi relay/light) (EMUL_NONE, EMUL_WEMO or EMUL_HUE)
 #define EMULATION_HUE_1ST_GEN  false             // [Emulation] Force SetOption109 1 - if you only have Echo Dot 2nd gen devices
 //#define USE_CORS                                 // [Cors] Enable CORS - Be aware that this feature is unsecure ATM (https://github.com/arendst/Tasmota/issues/6767)
@@ -179,7 +179,7 @@
 // HTML hex color codes. Only 3 and 6 digit hex string values are supported!! See https://www.w3schools.com/colors/colors_hex.asp
 // Light theme - pre v7
 // WebColor {"WebColor":["#000","#fff","#f2f2f2","#000","#fff","#000","#fff","#f00","#008000","#fff","#1fa3ec","#0e70a4","#d43535","#931f1f","#47c266","#5aaf6f","#fff","#999","#000"]}
-/*
+
 #define COLOR_TEXT                  "#000"       // [WebColor1] Global text color - Black
 #define COLOR_BACKGROUND            "#fff"       // [WebColor2] Global background color - White
 #define COLOR_FORM                  "#f2f2f2"    // [WebColor3] Form background color - Greyish
@@ -199,28 +199,28 @@
 #define COLOR_TIMER_TAB_TEXT        "#fff"       // [WebColor17] Config timer tab text color - White
 #define COLOR_TIMER_TAB_BACKGROUND  "#999"       // [WebColor18] Config timer tab background color - Dark gray
 #define COLOR_TITLE_TEXT            "#000"       // [WebColor19] Title text color - Whiteish
-*/
+
 // Dark theme
 // WebColor {"WebColor":["#eaeaea","#252525","#4f4f4f","#000","#ddd","#65c115","#1f1f1f","#ff5661","#008000","#faffff","#1fa3ec","#0e70a4","#d43535","#931f1f","#47c266","#5aaf6f","#faffff","#999","#eaeaea"]}
-#define COLOR_TEXT                  "#eaeaea"    // [WebColor1] Global text color - Very light gray
-#define COLOR_BACKGROUND            "#252525"    // [WebColor2] Global background color - Very dark gray (mostly black)
-#define COLOR_FORM                  "#4f4f4f"    // [WebColor3] Form background color - Very dark gray
-#define COLOR_INPUT_TEXT            "#000"       // [WebColor4] Input text color - Black
-#define COLOR_INPUT                 "#ddd"       // [WebColor5] Input background color - Very light gray
-#define COLOR_CONSOLE_TEXT          "#65c115"    // [WebColor6] Console text color - Strong Green
-#define COLOR_CONSOLE               "#1f1f1f"    // [WebColor7] Console background color - Very dark gray (mostly black)
-#define COLOR_TEXT_WARNING          "#ff5661"    // [WebColor8] Warning text color - Brick Red
-#define COLOR_TEXT_SUCCESS          "#008000"    // [WebColor9] Success text color - Dark lime green
-#define COLOR_BUTTON_TEXT           "#faffff"    // [WebColor10] Button text color - Very pale (mostly white) cyan
-#define COLOR_BUTTON                "#1fa3ec"    // [WebColor11] Button color - Vivid blue
-#define COLOR_BUTTON_HOVER          "#0e70a4"    // [WebColor12] Button color when hovered over - Dark blue
-#define COLOR_BUTTON_RESET          "#d43535"    // [WebColor13] Restart/Reset/Delete button color - Strong red
-#define COLOR_BUTTON_RESET_HOVER    "#931f1f"    // [WebColor14] Restart/Reset/Delete button color when hovered over - Dark red
-#define COLOR_BUTTON_SAVE           "#47c266"    // [WebColor15] Save button color - Moderate lime green
-#define COLOR_BUTTON_SAVE_HOVER     "#5aaf6f"    // [WebColor16] Save button color when hovered over - Dark moderate lime green
-#define COLOR_TIMER_TAB_TEXT        "#faffff"    // [WebColor17] Config timer tab text color - Very pale (mostly white) cyan.
-#define COLOR_TIMER_TAB_BACKGROUND  "#999"       // [WebColor18] Config timer tab background color - Dark gray
-#define COLOR_TITLE_TEXT            "#eaeaea"    // [WebColor19] Title text color - Very light gray
+// #define COLOR_TEXT                  "#eaeaea"    // [WebColor1] Global text color - Very light gray
+// #define COLOR_BACKGROUND            "#252525"    // [WebColor2] Global background color - Very dark gray (mostly black)
+// #define COLOR_FORM                  "#4f4f4f"    // [WebColor3] Form background color - Very dark gray
+// #define COLOR_INPUT_TEXT            "#000"       // [WebColor4] Input text color - Black
+//#define COLOR_INPUT                 "#ddd"       // [WebColor5] Input background color - Very light gray
+//#define COLOR_CONSOLE_TEXT          "#65c115"    // [WebColor6] Console text color - Strong Green
+//#define COLOR_CONSOLE               "#1f1f1f"    // [WebColor7] Console background color - Very dark gray (mostly black)
+//#define COLOR_TEXT_WARNING          "#ff5661"    // [WebColor8] Warning text color - Brick Red
+//#define COLOR_TEXT_SUCCESS          "#008000"    // [WebColor9] Success text color - Dark lime green
+//#define COLOR_BUTTON_TEXT           "#faffff"    // [WebColor10] Button text color - Very pale (mostly white) cyan
+//#define COLOR_BUTTON                "#1fa3ec"    // [WebColor11] Button color - Vivid blue
+//#define COLOR_BUTTON_HOVER          "#0e70a4"    // [WebColor12] Button color when hovered over - Dark blue
+//#define COLOR_BUTTON_RESET          "#d43535"    // [WebColor13] Restart/Reset/Delete button color - Strong red
+//#define COLOR_BUTTON_RESET_HOVER    "#931f1f"    // [WebColor14] Restart/Reset/Delete button color when hovered over - Dark red
+//#define COLOR_BUTTON_SAVE           "#47c266"    // [WebColor15] Save button color - Moderate lime green
+//#define COLOR_BUTTON_SAVE_HOVER     "#5aaf6f"    // [WebColor16] Save button color when hovered over - Dark moderate lime green
+//#define COLOR_TIMER_TAB_TEXT        "#faffff"    // [WebColor17] Config timer tab text color - Very pale (mostly white) cyan.
+//#define COLOR_TIMER_TAB_BACKGROUND  "#999"       // [WebColor18] Config timer tab background color - Dark gray
+//#define COLOR_TITLE_TEXT            "#eaeaea"    // [WebColor19] Title text color - Very light gray
 
 // -- KNX -----------------------------------------
 #define KNX_ENABLED            false             // [Knx_Enabled] Enable KNX protocol
@@ -373,7 +373,7 @@
 //#define MY_LANGUAGE            ko_KO           // Korean in Korea
 //#define MY_LANGUAGE            nl_NL           // Dutch in the Nederland
 //#define MY_LANGUAGE            pl_PL           // Polish in Poland
-//#define MY_LANGUAGE            pt_BR           // Portuguese in Brazil
+#define MY_LANGUAGE            pt_BR           // Portuguese in Brazil
 //#define MY_LANGUAGE            pt_PT           // Portuguese in Portugal
 //#define MY_LANGUAGE            ro_RO           // Romanian in Romania
 //#define MY_LANGUAGE            ru_RU           // Russian in Russia

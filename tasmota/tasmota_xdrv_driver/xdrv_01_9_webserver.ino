@@ -258,7 +258,7 @@ const char HTTP_HEAD_STYLE3[] PROGMEM =
 #endif
 */
   "<h4>%s</h4>"    // Module name
-  "<h2>Beenode.io</h2>";
+  "<h2>%s</h2>";
   //"<h2>%s</h2>";   // Device name
 
 const char HTTP_MSG_SLIDER_GRADIENT[] PROGMEM =
@@ -389,7 +389,7 @@ const char HTTP_COUNTER[] PROGMEM =
   "<br><div id='t' style='text-align:center;'></div>";
 
 const char HTTP_END[] PROGMEM =
-  "<div style='text-align:right;font-size:11px;'><hr/><a href='https://bit.ly/tasmota' target='_blank' style='color:#aaa;'>Beenode %s " D_BY " Beenode - 2023</a></div>"
+  "<div style='text-align:right;font-size:11px;'><hr/><a href='https://bit.ly/tasmota' target='_blank' style='color:#aaa;'>Tasmota-fn %s " D_BY " Fabrício Neves - 2023</a></div>"
   "</div>"
   "</body>"
   "</html>";

@@ -146,7 +146,9 @@
 
 // Display
 
-// #define USE_DISPLAY    
+ #define USE_DISPLAY                            // Add I2C/TM1637/MAX7219 Display Support (+2k code)
+   #define USE_DISPLAY_TM1637                   // [DisplayModel 15] Enable TM1637 Module
+   #define USE_DISPLAY_MAX7219                  // [DisplayModel 19] Enable MAX7219 Module 
 
 // Other config
 
